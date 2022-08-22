@@ -1,12 +1,20 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
+import NavBar from './Components/NavBar/NavBar'
+import ItemListConteiner from './Components/ItemListConteiner/ItemListConteiner';
+
 
 
 const App = () => {
+  
   return (
-    <>
-        <Navbar/>
-    </>
+    
+        <>        
+        
+          <NavBar/>
+          <ItemListConteiner Saludo = "Bienvenidos"/>
+        </>
+        
+    
   )
 }
 

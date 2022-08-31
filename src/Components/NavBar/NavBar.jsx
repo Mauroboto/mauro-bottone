@@ -6,6 +6,7 @@ const NavBar = () => {
     <section>
       <div>
         <h1>
+          
           <strong>SHOPIFUN</strong>
         </h1>
       </div>

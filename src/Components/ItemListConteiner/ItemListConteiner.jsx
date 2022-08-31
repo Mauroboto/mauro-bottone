@@ -1,23 +1,30 @@
-import '../ItemListConteiner/ItemListConteiner.css'
+import { useEffect, useState } from "react";
+import ItemList from "../ItemList/ItemList";
+import "../ItemListConteiner/ItemListConteiner.css";
+import { products } from "../Mock/Products";
 
-const ItemListConteiner = (props) => {
-    
-    
-    return(
-        <>
-            <p className='titulo'>{props.Saludo}</p> 
-            <div className='contenedorPadre'>                                 
-                <div className='contenedorHijo'>1</div>
-                <div className='contenedorHijo'>2</div>
-                <div className='contenedorHijo'>3</div>
-                <div className='contenedorHijo'>4</div>
-                <div className='contenedorHijo'>5</div>
-                <div className='contenedorHijo'>6</div>
-                
-            </div>
-        </>
+export const ItemListConteiner = (props) => {
+  
+  const [Items, setItems] = useState([]);
 
-    )
+  useEffect(()=>{
+    const getProducts = new Promise ((res, rej)=>{
+      setTimeout(()=>{
+        res(products);
+      }, 2000);
+    });
+      getProducts
+      .then((products) => {setItems(products);
+      })
+      .catch((error) =>{console.log(error);
+      })
+  }, [])
+
+  return (
+    <>
+      <p className="titulo">{props.Saludo}</p>
+      <ItemList Items={Items}/>
+      
+    </>
+  );
 }
-
-export default ItemListConteiner;

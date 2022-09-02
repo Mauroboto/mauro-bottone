@@ -4,27 +4,27 @@ import "../ItemListConteiner/ItemListConteiner.css";
 import { products } from "../Mock/Products";
 
 export const ItemListConteiner = (props) => {
-  
   const [Items, setItems] = useState([]);
 
-  useEffect(()=>{
-    const getProducts = new Promise ((res, rej)=>{
-      setTimeout(()=>{
+  useEffect(() => {
+    const getProducts = new Promise((res, rej) => {
+      setTimeout(() => {
         res(products);
       }, 2000);
     });
-      getProducts
-      .then((products) => {setItems(products);
+    getProducts
+      .then((products) => {
+        setItems(products);
       })
-      .catch((error) =>{console.log(error);
-      })
-  }, [])
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <>
       <p className="titulo">{props.Saludo}</p>
-      <ItemList Items={Items}/>
-      
+      <ItemList Items={Items} />
     </>
   );
-}
+};

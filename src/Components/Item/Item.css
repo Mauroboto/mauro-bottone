@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Item__card {
+  display: grid;
+  border: 2px solid black;
+  border-radius: 15px;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 10px;
+  padding: 10px;
+}

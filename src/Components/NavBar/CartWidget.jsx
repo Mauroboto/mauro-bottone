@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CartWidget = () => {
-  return (
-  <span className="material-symbols-outlined">shopping_cart</span>
-  )
-}
+  return <span className="material-symbols-outlined">shopping_cart</span>;
+};
 
-export default CartWidget
+export default CartWidget;

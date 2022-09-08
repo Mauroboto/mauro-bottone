@@ -4,7 +4,7 @@ export const products = [
     title: "Aceite de oliva, 500ml",
     price: 500,
     stock: 50,
-    desc: "Oliva extra virgen, prensado en frio",
+    desc: "El aceite de oliva virgen extra prensado en frío es el que sigue la elaboración más tradicional, una forma artesana y ya minoritaria de obtener a través de la aceituna el “oro líquido”, que se ha utilizado durante siglos.",
     category: "Alimentos",
     imagen: (
       <img
@@ -37,6 +37,21 @@ export const products = [
     imagen: (
       <img
         src="https://cdn.pixabay.com/photo/2017/04/01/12/36/bread-2193537__340.jpg"
+        alt=""
+      />
+    ),
+  },
+
+  {
+    id: 4,
+    title: "Arandanos",
+    price: 400,
+    stock: 50,
+    desc: "Los arándanos azules son frutas comestibles de la planta Vaccinium angustifolium. El arándano azul es un alimento común y, a veces, también se usa como medicina. Los arándanos azules tienen un alto contenido de fibra, lo que puede ayudar con la digestión normal",
+    category: "Frutas",
+    imagen: (
+      <img
+        src="https://cdn.pixabay.com/photo/2017/04/29/09/51/blueberries-2270379__340.jpg"
         alt=""
       />
     ),

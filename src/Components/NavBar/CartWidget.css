@@ -1,0 +1,10 @@
+.material-symbols-outlined {
+    padding: 15px 15px 15px 15px;
+    size: 200px;
+  }
+  .CartWidget {
+    max-width: fit-content;
+    max-height: fit-content;
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+  }
+  

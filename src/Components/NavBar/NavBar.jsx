@@ -1,5 +1,6 @@
-import "./NavBar.css";
 import CartWidget from "./CartWidget";
+import "../NavBar/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,21 +12,21 @@ const NavBar = () => {
       </div>
 
       <nav>
-        <ul id="menu">
+        <ul className="menu">
           <li>
-            <a href="../PERFUMERIA  BOTTONE/Index.html">HOME</a>
+            <Link to="/">HOME</Link>
           </li>
           <li>
-            <a href="../PERFUMERIA  BOTTONE/Pages/nosotros.html">Nosotros</a>
+            <Link to="/category/Panaderia">Panaderia</Link>
           </li>
           <li>
-            <a href="../PERFUMERIA  BOTTONE/Pages/catalogo.html">Catalogo</a>
+            <Link to="/category/Frutas">Frutas</Link>
           </li>
           <li>
-            <a href="../PERFUMERIA  BOTTONE/Pages/productos.html">Productos</a>
+            <Link to={'/category/Alimentos'}>Alimentos</Link>
           </li>
           <li>
-            <a href="../PERFUMERIA  BOTTONE/Pages/contacto.html">Contacto</a>
+            <a href="/">Contacto</a>
             <ul>
               <h2>Nuestras redes</h2>
               <li>

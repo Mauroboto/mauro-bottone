@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Itemcard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 500px;
+  max-height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
+}
+img {
+  width: 400px;
+  height: 300;
+  border-radius: 15px;
+}

@@ -4,12 +4,11 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { products } from "../Mock/Products";
 
 const ItemDetailConteiner = () => {
-
   const [Items, setItems] = useState({});
 
   useEffect(() => {
     const getProds = new Promise((res, rej) => {
-      const prodsFind = products.find((prod) => prod.id === 1);
+      const prodsFind = products.find((prod) => prod.id === 2);
       setTimeout(() => {
         res(prodsFind);
       }, 2000);
@@ -38,6 +37,3 @@ const ItemDetailConteiner = () => {
 };
 
 export default ItemDetailConteiner;
-
-
-

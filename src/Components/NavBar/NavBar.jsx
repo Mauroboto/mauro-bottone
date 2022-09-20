@@ -23,7 +23,7 @@ const NavBar = () => {
             <Link to="/category/Frutas">Frutas</Link>
           </li>
           <li>
-            <Link to={'/category/Alimentos'}>Alimentos</Link>
+            <Link to={"/category/Alimentos"}>Alimentos</Link>
           </li>
           <li>
             <a href="/">Contacto</a>
